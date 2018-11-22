@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+#indexPage {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+#indexPage .top {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  color: #fff;
+}
+#indexPage .top .logo {
+  width: 66px;
+  height: 66px;
+  display: block;
+  background-image: url('logo.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-top: 46px;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+#indexPage .top .dname {
+  font-size: 40px;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+#indexPage #pc {
+  width: 808px;
+  height: 661px;
+  background-image: url('pc.png');
+  background-repeat: no-repeat;
+  position: fixed;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  top: 240px;
+}
+#indexPage #pc .pccom {
+  width: 702px;
+  height: 395px;
+  border-radius: 2px;
+  position: relative;
+  top: 50px;
+  padding: 46px;
+  overflow: hidden;
+}
+#indexPage #pc .pccom .list {
+  height: 100%;
+  overflow-x: hidden;
+}
+#indexPage #pc .pccom .list .item {
+  width: 340px;
+  height: 44px;
+  border-radius: 8px;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#indexPage #pc .pccom .list .item:last-child {
+  margin-bottom: 0;
+}
+#indexPage #pc .pccom .list .item a {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  color: #6a6a6a;
+  background: #fff;
+}
+#indexPage #pc .pccom .list .item a:hover {
+  background: #ffcc03;
+}
+#indexPage #pc .pccom .list::-webkit-scrollbar {
+  width: 12px;
+}
+#indexPage #pc .pccom .list::-webkit-scrollbar-track {
+  background-color: #d8cee4;
+  border-radius: 3em;
+}
+#indexPage #pc .pccom .list::-webkit-scrollbar-thumb {
+  background-color: #ffcc03;
+  border-radius: 3em;
+}
+#indexPage #mobile {
+  -webkit-box-flex: 1;
+          flex: 1;
+  width: 100%;
+  display: none;
+}
+#indexPage #mobile .mcom {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+#indexPage #mobile .mcom .list {
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+  border-radius: 8px;
+  background: rgba(242, 242, 242, 0.8);
+  overflow-x: hidden;
+}
+#indexPage #mobile .mcom .list .item {
+  width: 100%;
+  height: 44px;
+  list-style: none;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+#indexPage #mobile .mcom .list .item:last-child {
+  margin-bottom: 0;
+}
+#indexPage #mobile .mcom .list .item a {
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  color: #6a6a6a;
+  background: #fff;
+}
+#indexPage #mobile .mcom .list .item a:hover {
+  background: #ffcc03;
+}
+#indexPage #mobile .mcom .list::-webkit-scrollbar {
+  width: 8px;
+}
+#indexPage #mobile .mcom .list::-webkit-scrollbar-track {
+  background-color: #d8cee4;
+  border-radius: 3em;
+}
+#indexPage #mobile .mcom .list::-webkit-scrollbar-thumb {
+  background-color: #ffcc03;
+  border-radius: 3em;
+}
+@media (max-width: 800px) {
+  #indexPage {
+    background-size: auto 70%;
+  }
+  #indexPage #pc {
+    display: none;
+  }
+  #indexPage .top .logo {
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+    -webkit-transition: all 0.8s ease-in;
+    transition: all 0.8s ease-in;
+  }
+  #indexPage .top .dname {
+    font-size: 24px;
+  }
+  #indexPage .top .xname {
+    font-size: 12px;
+  }
+  #indexPage #mobile {
+    display: -webkit-box;
+    display: flex;
+  }
+}
+@media (max-height: 900px) {
+  #indexPage #pc {
+    top: 140px;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
